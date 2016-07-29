@@ -1,0 +1,7 @@
+#!/usr/bin/eny ruby
+require 'uri'
+puts "Hello World"
+require 'net/http'
+uri = URI('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=40.705280,-74.014025&radius=500&types=food&key=AIzaSyDrPnWTc2lB5VL__4mFy6fU6kFCOVIU0KU')
+a=Net::HTTP.get(uri)
+puts a
